@@ -74,19 +74,28 @@ header img {
     margin-top: 25px;
     margin-bottom: 40px;
 }
-.header__title--container .header--a {
+.header__title--container .header--button {
     position: absolute;
-    left: 45px;
-    top: 90%;
-    width: 70%;
-    margin: 8px auto;
-    font-size: 1.6rem;
-    font-weight: var(--size-700);
+    left: calc(50% - 118px);
+    top: calc(90% - 30px);
+    display: block;
+    margin-top: 35px;
+    width: 230px;
+    font-size: 1.4rem;
+    font-weight: bold;
     line-height: 18px;
     text-decoration: none;
     color: var(--warm-black);
     background-color: var(--off-white);
-    padding: 14px 0px 14px 0px;
+    padding: 15px;
     box-shadow: var(--shadow-white-boxsh);
     border-radius: 4px;
+    border: none;
+}
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 5px;
+    background-image: url('https://i.postimg.cc/tRmBv9w5/Vector.png');
 }
