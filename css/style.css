@@ -117,3 +117,26 @@ main {
     max-width: 900px;
     margin: 0 auto;
 }
+.main__exchange--container .main__background--img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-image: url("https://i.postimg.cc/sXSM3NMN/Bitcoin.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main__exchange--container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    height: auto;
+    color: var(--warm-black);
+}
+.main__exchange--container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    height: auto;
+    color: #757575;
+}
