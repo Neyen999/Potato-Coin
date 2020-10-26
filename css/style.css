@@ -145,6 +145,7 @@ main {
 .main__tables--container {
     width: fit-content;
     margin: 0 auto;
+    margin-bottom: 15px;
     background-color: #E5E5E5;
     padding: 5px;
     border-radius: 8px;
@@ -222,4 +223,37 @@ main {
 }
 .updated span em {
     font-weight: 600;
+}
+
+/*BENEFITS*/
+.benefits {
+    background-color: var(--warm-black);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits .benefits__div {
+    border-radius: 8px;
+    background-color: var(--warm-blackplus);
+    margin-bottom: 10px;
+    max-width: 500px;
+    padding: 14px;
+}
+.benefits .d1 {
+    margin-top: 10px;
+}
+.benefits__div figure {
+    margin-bottom: 5px;
+}
+.benefits__div h3 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.benefits__div p {
+    color: #808080;
+    font-weight: 500;
+    font-size: 1.4rem;
 }
