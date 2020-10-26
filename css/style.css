@@ -110,6 +110,7 @@ main {
     padding-top: 80px;
     padding-bottom: 30px;
     text-align: center;
+    background-color: #E5E5E5;
 }
 .main__exchange--container-title {
     width: 90%;
@@ -139,4 +140,86 @@ main {
     font-weight: 500;
     height: auto;
     color: #757575;
+}
+/*COINS*/
+.main__tables--container {
+    width: fit-content;
+    margin: 0 auto;
+    background-color: #E5E5E5;
+    padding: 5px;
+    border-radius: 8px;
+}
+.main__tables--container h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #FF9536;
+    font-weight: 700;
+}
+.elements--container {
+    display: flex;
+    justify-content: center;
+    background-color: var(--off-white);
+    border-radius: 8px;
+    border-style: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+.elements--container:hover {
+    border: 1px solid #918d8d;
+    transition: .2s;
+}
+.elements--container span {
+    padding: 10px;
+}
+.tables--elements {
+    display: flex;
+    flex-direction: column;
+    color: #B5B0AC;
+    font-weight: 500;
+}
+.tables--prices {
+    display: flex;
+    flex-direction: column;
+    color: #757575;
+    font-weight: 400;
+}
+.tables--prices .down {
+    display: inline;
+    background-image: url("https://i.postimg.cc/5tDHdV2z/downarrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.tables--prices .up {
+    background-image: url("https://i.postimg.cc/x8vN34Yz/uparrow.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.tables--elements span {
+    border-top: 0px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-color: #C4C4C4;
+    border-style: ridge;
+}
+.tables--prices .the-span {
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px;
+    border-left: 0px;
+    border-color: #C4C4C4;
+    border-style: ridge;
+}
+.tables--prices .last, .tables--elements .last {
+    border-bottom: 0px;
+}   
+.updated {
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    max-width: 400px;
+}
+.updated span em {
+    font-weight: 600;
 }
