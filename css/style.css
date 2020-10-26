@@ -257,3 +257,19 @@ main {
     font-weight: 500;
     font-size: 1.4rem;
 }
+/*bitcoin__container--img*/
+.bitcoin__container--img {
+    height: 387px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    min-width: 320px;
+    background: url("https://i.postimg.cc/wMp7MQJT/orangewoman.png")center center/cover no-repeat;    
+}
+.bitcoin__container--img h2 {
+    text-align: center;
+    padding-top: 60px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
