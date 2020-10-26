@@ -282,6 +282,9 @@ main {
     text-align: center;
     padding-bottom: 60px;
 }
+.plans--slider {
+    cursor: pointer;
+}
 .plans--title {
     width: 90%;
     min-width: 288px;
@@ -308,7 +311,7 @@ main {
     min-width: 230px;
     max-width: 300px;
     margin: 50px auto 0;
-    padding: 0px 15px;
+    padding: 10px 15px;
     background-color: var(--white);
     border-radius: 15px;
     box-shadow: var(--shadow-black-boxsh);
@@ -333,8 +336,10 @@ main {
     color: black;
 }
 .plan__card--price {
+    width: fit-content;
+    margin: 0 auto;
     padding: 5px 0;
-    font-size: 5.2rem;
+    font-size: 5rem;
     font-weight: bold;
     color: black;
 }
@@ -346,4 +351,68 @@ main {
 .plan__card--saving {
     font-size: 1.2rem;
     color: #757575;
+}
+.plan__card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: var(--font-sans);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warm-black);
+    cursor: pointer;
+}
+.plan__card--ca:hover {
+    background-color: var(--soft-orange);
+}
+.plan__card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("https://i.postimg.cc/sx8KMJ78/arrow-right-1.png");
+    vertical-align: text-bottom;
+}
+.expert {
+    position: absolute;
+    padding: 6px;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--white);
+}
+.blue {
+    border: 2px solid var(--secondary-blue);
+}
+.empresas {
+    position: absolute;
+    padding: 6px;
+    width: 120px;
+    height: 31px;
+    top: -15px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    background-color: var(--warm-blackplus);
+    border-radius: 8px;
+    color: var(--white);
+}
+.gray {
+    border: 2px solid var(--warm-black);
+}
+.blue:hover {
+    background-color: var(--soft-blue);
+}
+.gray:hover {
+    background-color: #ecebeb;
+}
+.recommended:hover, .expert:hover, .empresas:hover {
+    opacity: .9;
 }
