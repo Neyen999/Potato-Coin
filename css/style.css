@@ -283,6 +283,12 @@ main {
     padding-bottom: 60px;
 }
 .plans--slider {
+    display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding-top: 4rem;
     cursor: pointer;
 }
 .plans--title {
@@ -308,6 +314,7 @@ main {
 .plans__container--card {
     position: relative;
     width: 70%;
+    height: 320px;
     min-width: 230px;
     max-width: 300px;
     margin: 50px auto 0;
@@ -315,6 +322,11 @@ main {
     background-color: var(--white);
     border-radius: 15px;
     box-shadow: var(--shadow-black-boxsh);
+}
+.plans__container--card {
+    scroll-snap-align: center; 
+	margin-bottom: 0;
+	margin: 0 1.5rem;
 }
 .plans__container--card .recommended {
     position: absolute;
@@ -415,4 +427,67 @@ main {
 }
 .recommended:hover, .expert:hover, .empresas:hover {
     opacity: .9;
+}
+
+/*FOOTER*/
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bitcoin-orange);
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.footer__list--ul {
+    list-style: none;
+}
+.footer__list--ul li {
+    margin: 10px;
+}
+.footer__list--ul li a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    line-height: 1.8rem;
+}
+.footer__list--ul li a:hover {
+    border-bottom: 3px solid white;
+    
+}
+
+@media screen and (min-width: 990px) {
+    .main__tables--container {
+        font-size: 1.4rem;
+    }
+    .plans--slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow-x: hidden;
+        overscroll-behavior-x: initial;
+    }
+    .plans__container--card {
+        margin: 20px 10px;
+    }
+    .plan__card--ca {
+        margin-top: 90px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .main__tables--container {
+        font-size: 1.6rem;
+    }
+    .plans__container--card {
+        max-width: 370px;
+    }
+    footer {
+        font-size: 1.6rem;
+    }
+    footer img {
+        width: 70px;
+    }
 }
