@@ -465,6 +465,8 @@ footer {
     .plans--slider {
         display: flex;
         flex-direction: column;
+        transition-delay: 1s;
+        transition-duration: 1s;
         align-items: center;
         height: auto;
         overflow-x: hidden;
